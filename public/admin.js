@@ -20,7 +20,7 @@ function renderBook(book) {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSOON.stringify({
+            body: JSON.stringify({
                 id: book.id,
                 quantity: quantityInput.value
             })
